@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    
+
+
+<!-- Basic Styles For Gallery -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+    .pr{
+  box-sizing: border-box
+}
+
+.show {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.small-img {
+  width: 350px;
+  height: 70px;
+  margin-top: 10px;
+  position: relative;
+  left: 25px;
+}
+
+.small-img .icon-left, .small-img .icon-right {
+  width: 12px;
+  height: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.small-img .icon-left { transform: rotate(180deg) }
+
+.small-img .icon-right { right: 0; }
+
+.small-img .icon-left:hover, .small-img .icon-right:hover { opacity: .5; }
+
+.small-container {
+  width: 310px;
+  height: 70px;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.small-container div {
+  width: 800%;
+  position: relative;
+}
+
+.small-container .show-small-img {
+  width: 70px;
+  height: 70px;
+  margin-right: 6px;
+  cursor: pointer;
+  float: left;
+}
+
+.small-container .show-small-img:last-of-type { margin-right: 0; }
+
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 0;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block; 
+}
+
+</style>
+
+</head>
+<body>
+   
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader_34">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER ENDS START ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <header id="home" class="header-area pt-100">
+
+        <div class="shape header-shape-one">
+            <img src="assets/images/banner/shape/shape-1.png" alt="shape">
+        </div> <!-- header shape one -->
+
+        <div class="shape header-shape-tow animation-one">
+            <img src="assets/images/banner/shape/shape-2.png" alt="shape">
+        </div> <!-- header shape tow -->
+
+        <div class="navigation-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/images/logo.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="page-scroll" href="index.html">Trang Chủ</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="about.html">Giới Thiệu</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#service">Dịch vụ</a>
+                                    </li>
+                                    <li style="margin-top: -5px;" class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Sản phẩm
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <li><a class="dropdown-item" href="#">Sản phẩm 1</a></li>
+                                          <li><a class="dropdown-item" href="#">Sản phẩm 2</a></li>
+                                          <li><a class="dropdown-item" href="#">Sản phẩm 3</a></li>
+                                        </ul>
+                                      </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="#contact">Liên Hệ</a>
+                                    </li>
+                                </ul> <!-- navbar nav -->
+                            </div>
+                            <div class="navbar-btn ml-20 d-none d-sm-block">
+                                <a class="main-btn" href="tel:0978518485"><i class="lni-phone"></i> 0978518485</a>
+                            </div>
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navigation bar -->
+        <section id="about" class="about-area pt-80">
+                
+        </section>
+    
+       
+        </div> <!-- header banner -->
+
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+
+    <section class="py-5">
+        <div class="container pr px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+     
+             <div class="col-lg-6">
+                   <div class="show" href="1.jpg">
+                    <img src="assets/images/product/product1.jpeg" id="show-img">
+                  </div>           
+                <div class="small-img">
+                    <img src="assets/images/product/next-icon.png" class="icon-left" alt="" id="prev-img">
+                    <div class="small-container">
+                    <div id="small-img-roll">
+                        <img src="assets/images/product/product1.jpeg" class="show-small-img" alt="">
+                        <img src="assets/images/product/product2.jpeg" class="show-small-img" alt="">
+                        <img src="assets/images/product/product3.png" class="show-small-img" alt="">
+                        <img src="assets/images/product/product1.jpeg" class="show-small-img" alt="">
+                    </div>
+                    </div>
+                    <img src="assets/images/product/next-icon.png" class="icon-right" alt="" id="next-img">
+                </div>
+             </div>
+                
+                
+                <div class="col-md-6">
+                    <div class="small mb-1">Mã SP: CMT8-1945</div>
+                    <h1 class="display-5 fw-bolder">Băng dính trong</h1>
+                    <div class="fs-5 mb-5">
+                        <span>200.000 VNĐ</span>
+                        
+                    </div>
+                    <p class="">
+                        <p><h4> Mô tả sản phẩm</h4></p>
+
+                            *Sản phẩm được cắt theo khổ 4,8 cm, màng dày mic 50, lõi nhựa 3 ly <br>
+                            *Loại 136 Yard là sản phẩm thông dụng được rất nhiều Công ty và các đối tác bán buôn lựa chọn <br>
+                            <b>*Ưu điểm <br></b>
+                            - Cầm rất vừa tay <br>
+                            - Chi phí lõi là thấp <br>
+                            - Lõi làm bằng nhựa nên không sợ ẩm ướt, mưa phùn <br>
+                            - Đảm bảo độ bám dính là tốt nhất <br>
+                            <b>*Quy cách: <br></b>
+                            - 1 cây đóng 6 cuộn. 1 thùng 20 cây. Nam Hải nhận đơn từ 1 thùng chở lên <br>
+                            - Giao hàng miễn phí tại nội thành Hà Nội và các huyện quanh Thanh Trì, Hà Nội. Với các đối tác ở các Tỉnh phía Bắc, vui lòng liên hệ gặp Mr Hoàng <a href="tel:0978518485"><b>0978518485</b></a> <br>
+                            <b>*Chế độ bảo hành<br></b>
+                            Mọi sản phẩm của Công ty Nam Hải sản xuất đều được đảm bảo chất lượng, đổi trả hàng trong quá trình sử dụng<br>
+                    </p>
+                    <div class="d-flex">
+                        <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem">
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                            <i class="bi-cart-fill me-1"></i>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   <div class="container">
+    <h2 class="fw-bolder mb-4">Sản phẩm khác</h2>
+    <div class="row ">
+        
+        <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="single-team text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.4s; animation-name: fadeInUp;">
+        <div class="team-image">
+        <img src="assets/images/product/p-11.jpeg" alt="Team" data-pagespeed-url-hash="387237869" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+        </div>
+        <div class="team-content">
+        <h4 class="team-name mt-10"><a href="#">Băng dính trong </a></h4>
+        <span class="sub-title"><a style="color: black;" href="#" css>200.000 VNĐ</a></span>
+        </div>
+        </div> 
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="single-team text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.6s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.4s; animation-name: fadeInUp;">
+            <div class="team-image">
+            <img src="assets/images/product/p-11.jpeg" alt="Team" data-pagespeed-url-hash="387237869" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+            </div>
+            <div class="team-content">
+            <h4 class="team-name mt-10"><a href="#">Băng dính trong </a></h4>
+            <span class="sub-title"><a style="color: black;" href="#" css>200.000 VNĐ</a></span>
+            </div>
+            </div> 
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-team text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.4s; animation-name: fadeInUp;">
+                <div class="team-image">
+                <img src="assets/images/product/p-11.jpeg" alt="Team" data-pagespeed-url-hash="387237869" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                </div>
+                <div class="team-content">
+                <h4 class="team-name mt-10"><a href="#">Băng dính trong </a></h4>
+                <span class="sub-title"><a style="color: black;" href="#" css>200.000 VNĐ</a></span>
+                </div>
+                </div> 
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s" style="visibility: visible; animation-duration: 1.5s; animation-delay: 0.4s; animation-name: fadeInUp;">
+                    <div class="team-image">
+                    <img src="assets/images/product/p-11.jpeg" alt="Team" data-pagespeed-url-hash="387237869" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                    </div>
+                    <div class="team-content">
+                    <h4 class="team-name mt-10"><a href="#">Băng dính trong </a></h4>
+                    <span class="sub-title"><a style="color: black;" href="#" css>200.000 VNĐ</a></span>
+                    </div>
+                    </div> 
+                    </div>
+      
+    </div> 
+   </div>
+    
+
+    <!--====== FOOTER PART START ======-->
+
+    <footer id="footer" class="footer-area">
+        <div class="footer-widget pt-80 pb-130">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-8">
+                        <div class="footer-logo mt-50">
+                            <a href="#">
+                                <img src="assets/images/logo.png" alt="Logo">
+                            </a>
+                            <ul class="footer-info">
+                                <li>
+                                    <div class="single-info">
+                                        <div class="info-icon">
+                                            <i class="lni-phone-handset"></i>
+                                        </div>
+                                        <div class="info-content">
+                                            <p><b><a href="tel:0978518485">0978518485</a></b></p>
+                                        </div>
+                                    </div> <!-- single info -->
+                                </li>
+                                <li>
+                                    <div class="single-info">
+                                        <div class="info-icon">
+                                            <i class="lni-envelope"></i>
+                                        </div>
+                                        <div class="info-content">
+                                            <p>tranhoang3a@gmail.com</p>
+                                        </div>
+                                    </div> <!-- single info -->
+                                </li>
+                                <li>
+                                    <div class="single-info">
+                                        <div class="info-icon">
+                                            <i class="lni-map"></i>
+                                        </div>
+                                        <div class="info-content">
+                                            <p>Khu CN Eton, Thôn Văn xã Thanh Liệt - Thanh Trì - Hà Nội</p>
+                                        </div>
+                                    </div> <!-- single info -->
+                                </li>
+                            </ul>
+                           
+                        </div> <!-- footer logo -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="footer-link mt-45">
+                            <div class="f-title">
+                                <h4 class="title">HỖ TRỢ KHÁCH HÀNG</h4>
+                            </div>
+                            <ul class="mt-15">
+                                <li><a href="#">Chính sách bán hàng</a></li>
+                                <li><a href="#">Chính sách bán hàng</a></li>
+                                <li><a href="#">Chính sách bán hàng</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="footer-link mt-45">
+                            <div class="f-title">
+                                <h4 class="title">SẢN PHẨM CHÍNH</h4>
+                            </div>
+                            <ul class="mt-15">
+                                <li><a href="#">Băng dính</a></li>
+                                <li><a href="#">Màng PE</a></li>
+                                <li><a href="#">Sản phẩm khác</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-8">
+                        <div class="footer-newsleter mt-45">
+                            <div class="f-title">
+                                <h4 class="title">Nhận thông báo</h4>
+                            </div>
+                            <p class="mt-15">Để lại email để nhận thông báo mới về chúng tôi</p>
+                            <form action="#">
+                                <div class="newsleter mt-20">
+                                    <input type="email" placeholder="email@gmail.com">
+                                    <button><i class="lni-angle-double-right"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright text-center">
+                            <p><b>@ Bản quyền thuộc Công ty băng dính Nam Hải</b></p>
+                        </div> <!-- copyright -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- copyright-area -->
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TO TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+
+    <!--====== BACK TO TOP PART ENDS ======-->
+
+    <!--====== PART START ======-->
+
+    <!--
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-"></div>
+            </div>
+        </div>
+    </section>
+-->
+
+    <!--====== PART ENDS ======-->
+
+
+    <!-- row -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+    crossorigin="anonymous"></script>
+ <script src="assets/js/zoom-image.js"></script>
+ <!-- <script src="scripts/main.js"></script> -->
+        <script>
+            //Initialize product gallery
+
+    $('.show').zoomImage();
+
+    $('.show-small-img:first-of-type').css({'border': 'solid 2px #951b25', 'padding': '2px'})
+    $('.show-small-img:first-of-type').attr('alt', 'now').siblings().removeAttr('alt')
+    $('.show-small-img').click(function () {
+    $('#show-img').attr('src', $(this).attr('src'))
+    $('#big-img').attr('src', $(this).attr('src'))
+    $(this).attr('alt', 'now').siblings().removeAttr('alt')
+    $(this).css({'border': 'solid 1px #951b25', 'padding': '2px'}).siblings().css({'border': 'none', 'padding': '0'})
+    if ($('#small-img-roll').children().length > 4) {
+        if ($(this).index() >= 3 && $(this).index() < $('#small-img-roll').children().length - 1){
+        $('#small-img-roll').css('left', -($(this).index() - 2) * 76 + 'px')
+        } else if ($(this).index() == $('#small-img-roll').children().length - 1) {
+        $('#small-img-roll').css('left', -($('#small-img-roll').children().length - 4) * 76 + 'px')
+        } else {
+        $('#small-img-roll').css('left', '0')
+        }
+    }
+    })
+
+    //Enable the next button
+
+    $('#next-img').click(function (){
+    $('#show-img').attr('src', $(".show-small-img[alt='now']").next().attr('src'))
+    $('#big-img').attr('src', $(".show-small-img[alt='now']").next().attr('src'))
+    $(".show-small-img[alt='now']").next().css({'border': 'solid 1px #951b25', 'padding': '2px'}).siblings().css({'border': 'none', 'padding': '0'})
+    $(".show-small-img[alt='now']").next().attr('alt', 'now').siblings().removeAttr('alt')
+    if ($('#small-img-roll').children().length > 4) {
+        if ($(".show-small-img[alt='now']").index() >= 3 && $(".show-small-img[alt='now']").index() < $('#small-img-roll').children().length - 1){
+        $('#small-img-roll').css('left', -($(".show-small-img[alt='now']").index() - 2) * 76 + 'px')
+        } else if ($(".show-small-img[alt='now']").index() == $('#small-img-roll').children().length - 1) {
+        $('#small-img-roll').css('left', -($('#small-img-roll').children().length - 4) * 76 + 'px')
+        } else {
+        $('#small-img-roll').css('left', '0')
+        }
+    }
+    })
+
+    //Enable the previous button
+
+    $('#prev-img').click(function (){
+    $('#show-img').attr('src', $(".show-small-img[alt='now']").prev().attr('src'))
+    $('#big-img').attr('src', $(".show-small-img[alt='now']").prev().attr('src'))
+    $(".show-small-img[alt='now']").prev().css({'border': 'solid 1px #951b25', 'padding': '2px'}).siblings().css({'border': 'none', 'padding': '0'})
+    $(".show-small-img[alt='now']").prev().attr('alt', 'now').siblings().removeAttr('alt')
+    if ($('#small-img-roll').children().length > 4) {
+        if ($(".show-small-img[alt='now']").index() >= 3 && $(".show-small-img[alt='now']").index() < $('#small-img-roll').children().length - 1){
+        $('#small-img-roll').css('left', -($(".show-small-img[alt='now']").index() - 2) * 76 + 'px')
+        } else if ($(".show-small-img[alt='now']").index() == $('#small-img-roll').children().length - 1) {
+        $('#small-img-roll').css('left', -($('#small-img-roll').children().length - 4) * 76 + 'px')
+        } else {
+        $('#small-img-roll').css('left', '0')
+        }
+    }
+    })
+
+        </script>
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--====== WOW js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!--====== Aos js ======-->
+    <script src="assets/js/aos.js"></script>
+
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
